@@ -1,0 +1,32 @@
+#include <windows.h>
+
+// Icono del ejecutable (el logo de ReKapture)
+IDI_APPICON ICON "@REKAPTURE_ICON_PATH@"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION @REKAPTURE_VER_MAJOR@,@REKAPTURE_VER_MINOR@,@REKAPTURE_VER_PATCH@,0
+ PRODUCTVERSION @REKAPTURE_VER_MAJOR@,@REKAPTURE_VER_MINOR@,@REKAPTURE_VER_PATCH@,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040A04B0"
+        BEGIN
+            VALUE "CompanyName", "ReKapture"
+            VALUE "FileDescription", "ReKapture - grabador de gameplays"
+            VALUE "FileVersion", "@REKAPTURE_VERSION@"
+            VALUE "InternalName", "ReKapture"
+            VALUE "OriginalFilename", "ReKapture.exe"
+            VALUE "ProductName", "ReKapture"
+            VALUE "ProductVersion", "@REKAPTURE_VERSION@"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x040A, 1200
+    END
+END

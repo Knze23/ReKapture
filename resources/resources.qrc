@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="rekapture.png">icons/rekapture.png</file>
+        <file alias="rekapture-512.png">icons/rekapture-512.png</file>
+    </qresource>
+</RCC>

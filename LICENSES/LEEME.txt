@@ -1,0 +1,28 @@
+ReKapture - licencias y avisos
+==============================
+
+ReKapture no es un producto oficial de OBS Studio ni esta afiliado al proyecto OBS.
+
+Componentes de terceros incluidos en este paquete
+-------------------------------------------------
+- libobs y los modulos de OBS Studio (obs-ffmpeg, obs-nvenc, obs-outputs, obs-qsv11, obs-x264,
+  win-capture, win-wasapi, image-source, obs-filters): GNU GPL v2 o posterior.
+  Texto: OBS-Studio-COPYING.txt. Codigo fuente: https://github.com/obsproject/obs-studio
+  (version usada: 33.0.0-rc2).
+- Qt 6: LGPL v3 (se usa enlazado dinamicamente). Licencias en la carpeta obs-deps-qt6-*.
+- FFmpeg, x264 y otras bibliotecas de obs-deps: ver las licencias en la carpeta obs-deps-*.
+
+Otros componentes
+-----------------
+- El MP3 se codifica con el codificador de Media Foundation que ya incluye Windows (no se distribuye ningun
+  codificador MP3 con ReKapture).
+- Los plugins VST 2.x externos los instala y licencia cada usuario por su cuenta; ReKapture no
+  los incluye. Se cargan mediante el modulo obs-vst de OBS Studio.
+
+Licencia de ReKapture
+---------------------
+ReKapture enlaza con libobs (GPL v2 o posterior). Mientras el programa sea de uso personal no hay
+obligaciones adicionales. Si lo distribuyes (publicas el instalador o el .zip), debes:
+  1. ofrecer el codigo fuente de ReKapture y de tus modificaciones a quien reciba el programa, y
+  2. publicarlo bajo una licencia compatible con la GPL (por ejemplo GPL v2 o posterior).
+La licencia concreta de ReKapture la decide su autor; este archivo no es asesoramiento legal.

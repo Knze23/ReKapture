@@ -1,0 +1,152 @@
+﻿=== ReKapture run report (2026-10-22T00:21:27) ===
+configure exit code: 0
+build exit code: 0
+ReKapture se cerro. Codigo de salida: 0
+
+--- rekapture.log (ultimas 70 lineas) ---
+2026-10-22 00:22:30.808 [OBS-INFO] WASAPI: Device 'Altavoces (Realtek(R) Audio)' [48000 Hz] initialized (source: rk_desktop_audio)
+2026-10-22 00:22:35.073 [OBS-INFO] [duplicator-monitor-capture: 'rk_monitor'] update settings:
+	display: LF24T35 (1920x1080)
+	cursor: true
+	method: DXGI
+	id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	alt_id: \\.\DISPLAY1
+	setting_id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	force SDR: false
+2026-10-22 00:24:18.387 [QT-WARN] QFont::setPointSize: Point size <= 0 (-1), must be greater than 0
+2026-10-22 00:24:32.355 [OBS-INFO] [win-wasapi: 'rk_mic_audio'] update settings:
+	device id: {0.0.1.00000000}.{01e7112c-c262-4657-83ae-1736edfd00e4}
+	use device timing: 0
+2026-10-22 00:24:32.368 [OBS-INFO] Device 'Micrófono (2- Usb Audio Device)' invalidated.  Retrying (source: rk_mic_audio)
+2026-10-22 00:24:32.381 [OBS-INFO] WASAPI: Device 'Micrófono (NVIDIA Broadcast)' [48000 Hz] initialized (source: rk_mic_audio)
+2026-10-22 00:24:32.386 [OBS-INFO] [duplicator-monitor-capture: 'rk_monitor'] update settings:
+	display: LF24T35 (1920x1080)
+	cursor: true
+	method: DXGI
+	id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	alt_id: \\.\DISPLAY1
+	setting_id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	force SDR: false
+2026-10-22 00:25:46.718 [OBS-INFO] [duplicator-monitor-capture: 'rk_monitor'] update settings:
+	display: LF24T35 (1920x1080)
+	cursor: true
+	method: DXGI
+	id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	alt_id: \\.\DISPLAY1
+	setting_id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	force SDR: false
+2026-10-22 00:25:47.818 [OBS-INFO] [duplicator-monitor-capture: 'rk_monitor'] update settings:
+	display: LF24T35 (1920x1080)
+	cursor: true
+	method: DXGI
+	id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	alt_id: \\.\DISPLAY1
+	setting_id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	force SDR: false
+2026-10-22 00:26:38.518 [OBS-INFO] ---------------------------------
+2026-10-22 00:26:38.518 [OBS-INFO] video settings reset:
+	base resolution:   1920x1080
+	output resolution: 1920x1080
+	downscale filter:  Bicubic
+	fps:               60/1
+	format:            NV12
+	YUV mode:          Rec. 709/Partial
+2026-10-22 00:26:38.518 [OBS-INFO] NV12 texture support enabled
+2026-10-22 00:26:38.519 [OBS-INFO] P010 texture support not available
+2026-10-22 00:26:38.520 [INFO] Video reconfigurado: 1920x1080 a 60 FPS
+2026-10-22 00:26:38.537 [OBS-INFO] [duplicator-monitor-capture: 'rk_monitor'] update settings:
+	display: LF24T35 (1920x1080)
+	cursor: true
+	method: DXGI
+	id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	alt_id: \\.\DISPLAY1
+	setting_id: \\?\DISPLAY#SAM707D#5&3a4d3dbb&0&UID65792#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+	force SDR: false
+2026-10-22 00:28:46.822 [INFO] Cerrando libobs...
+2026-10-22 00:28:46.822 [OBS-INFO] Deduplication logic stopped.
+2026-10-22 00:28:46.822 [WARN] Fuente sin liberar al cerrar: nombre=rk_game tipo=game_capture
+2026-10-22 00:28:46.822 [WARN] Fuente sin liberar al cerrar: nombre=rk_monitor tipo=monitor_capture
+2026-10-22 00:28:46.822 [WARN] Fuente sin liberar al cerrar: nombre=rk_scene tipo=scene
+2026-10-22 00:28:46.822 [OBS-INFO] WASAPI: Device 'Altavoces (Realtek(R) Audio)' Terminated
+2026-10-22 00:28:46.825 [OBS-INFO] WASAPI: Device 'Micrófono (NVIDIA Broadcast)' Terminated
+2026-10-22 00:28:46.868 [OBS-INFO] Freeing OBS context data
+2026-10-22 00:28:46.868 [OBS-INFO] 	1 source(s) were remaining
+2026-10-22 00:28:46.868 [OBS-ERROR] Double destroy just occurred. Something called addref on a source after it was already fully released, I guess.
+2026-10-22 00:28:46.901 [INFO] libobs cerrado. Asignaciones sin liberar: 6
+2026-10-22 00:28:46.922 [INFO] === ReKapture terminado (codigo 0) ===
+
+--- grabaciones en C:\Users\Eze\Videos\ReKapture (ultimas 5) ---
+
+--- resumen de tiempos de grabacion (todo el log) ---
+2026-10-21 18:27:36.046 [INFO] Salida micrófono iniciada.
+2026-10-21 18:28:05.032 [INFO] Atajo global activado: detener
+2026-10-21 18:28:05.032 [INFO] Deteniendo grabación...
+2026-10-21 18:28:05.032 [INFO] obs_output_stop(principal) llamado a los 0 ms
+2026-10-21 18:28:05.032 [INFO] obs_output_stop(micrófono) llamado a los 0 ms
+2026-10-21 18:28:05.318 [INFO] Salida micrófono detenida (código 0) 285 ms después de pedir la parada.
+2026-10-21 18:28:05.629 [INFO] Salida principal detenida (código 0) 597 ms después de pedir la parada.
+2026-10-21 18:28:05.629 [INFO] Resultado principal: archivo=C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-27-35.mp4 tamaño=22211077 bytes código=0
+2026-10-21 18:28:05.629 [INFO] Resultado micrófono: archivo=C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-27-35_MIC.mp4 tamaño=605702 bytes código=0
+2026-10-21 18:51:51.337 [INFO] Atajo global activado: iniciar
+2026-10-21 18:51:51.562 [INFO] Modo de captura: juego, objetivo: Roblox:WINDOWSCLIENT:RobloxPlayerBeta.exe
+2026-10-21 18:51:51.566 [INFO] Bitrate objetivo: 6000 kbps, lienzo 1920x1080
+2026-10-21 18:51:51.740 [INFO] Iniciando grabación: C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-51-51.mp4 + C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-51-51_MIC.mp4
+2026-10-21 18:51:51.740 [INFO] Salida principal iniciada.
+2026-10-21 18:51:51.741 [INFO] Salida micrófono iniciada.
+2026-10-21 18:52:05.697 [INFO] Atajo global activado: detener
+2026-10-21 18:52:05.697 [INFO] Deteniendo grabación...
+2026-10-21 18:52:05.697 [INFO] obs_output_stop(principal) llamado a los 0 ms
+2026-10-21 18:52:05.697 [INFO] obs_output_stop(micrófono) llamado a los 0 ms
+2026-10-21 18:52:05.974 [INFO] Salida micrófono detenida (código 0) 276 ms después de pedir la parada.
+2026-10-21 18:52:06.291 [INFO] Salida principal detenida (código 0) 593 ms después de pedir la parada.
+2026-10-21 18:52:06.291 [INFO] Resultado principal: archivo=C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-51-51.mp4 tamaño=10774761 bytes código=0
+2026-10-21 18:52:06.291 [INFO] Resultado micrófono: archivo=C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-51-51_MIC.mp4 tamaño=299154 bytes código=0
+2026-10-21 18:56:06.616 [INFO] Atajo global activado: iniciar
+2026-10-21 18:56:06.836 [INFO] Modo de captura: juego, objetivo: Resident Evil 4:via:re4.exe
+2026-10-21 18:56:06.841 [INFO] Bitrate objetivo: 6000 kbps, lienzo 1920x1080
+2026-10-21 18:56:07.031 [INFO] Iniciando grabación: C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-56-06.mp4 + C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-56-06_MIC.mp4
+2026-10-21 18:56:07.032 [INFO] Salida principal iniciada.
+2026-10-21 18:56:07.032 [INFO] Salida micrófono iniciada.
+2026-10-21 18:56:14.987 [INFO] Capturando juego: Resident Evil 4 (re4.exe)
+2026-10-21 18:56:27.984 [INFO] Atajo global activado: detener
+2026-10-21 18:56:27.984 [INFO] Deteniendo grabación...
+2026-10-21 18:56:27.984 [INFO] obs_output_stop(principal) llamado a los 0 ms
+2026-10-21 18:56:27.984 [INFO] obs_output_stop(micrófono) llamado a los 0 ms
+2026-10-21 18:56:28.256 [INFO] Salida micrófono detenida (código 0) 272 ms después de pedir la parada.
+2026-10-21 18:56:28.940 [INFO] Salida principal detenida (código 0) 956 ms después de pedir la parada.
+2026-10-21 18:56:28.940 [INFO] Resultado principal: archivo=C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-56-06.mp4 tamaño=16221044 bytes código=0
+2026-10-21 18:56:28.995 [INFO] Resultado micrófono: archivo=C:/Users/Eze/Videos/ReKapture/ReKapture_2026-10-21_18-56-06_MIC.mp4 tamaño=446940 bytes código=0
+2026-10-21 18:56:29.090 [INFO] Se perdió la captura del juego.
+2026-10-22 00:26:38.520 [INFO] Video reconfigurado: 1920x1080 a 60 FPS
+
+--- DLL bajo deploy\core (primeras 40) ---
+\aja\aja.dll
+\aja-output-ui\aja-output-ui.dll
+\coreaudio-encoder\coreaudio-encoder.dll
+\decklink\decklink.dll
+\decklink-captions\decklink-captions.dll
+\decklink-output-ui\decklink-output-ui.dll
+\frontend-tools\frontend-tools.dll
+\image-source\image-source.dll
+\nv-filters\nv-filters.dll
+\obs-ffmpeg\obs-ffmpeg.dll
+\obs-filters\obs-filters.dll
+\obs-nvenc\obs-nvenc.dll
+\obs-outputs\obs-outputs.dll
+\obs-qsv11\obs-qsv11.dll
+\obs-text\obs-text.dll
+\obs-transitions\obs-transitions.dll
+\obs-vst\obs-vst.dll
+\obs-webrtc\obs-webrtc.dll
+\obs-websocket\obs-websocket.dll
+\obs-x264\obs-x264.dll
+\rtmp-services\rtmp-services.dll
+\text-freetype2\text-freetype2.dll
+\vlc-video\vlc-video.dll
+\win-capture\win-capture.dll
+\win-capture\data\graphics-hook32.dll
+\win-capture\data\graphics-hook64.dll
+\win-dshow\win-dshow.dll
+\win-dshow\data\obs-virtualcam-module32.dll
+\win-dshow\data\obs-virtualcam-module64.dll
+\win-wasapi\win-wasapi.dll
