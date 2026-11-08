@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111114">
+  <meta name="description" content="ReKapture es una grabadora gratuita para capturar partidas, basada en el motor de OBS.">
+  <title>ReKapture — Capturá cada momento</title>
+  <link rel="icon" type="image/png" href="assets/rekapture-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=0.6.0">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="ReKapture, inicio"><img src="assets/rekapture-logo.png" alt=""><span>Re<span class="brand-accent">Kapture</span></span></a>
+    <nav aria-label="Navegación principal"><a href="#funciones">Funciones</a><a href="#capturas">La interfaz</a><a href="#novedades">Novedades</a></nav>
+    <div class="topbar-tools"><span class="status"><i></i> VERSION 0.6.1 DISPONIBLE</span><button class="donate-trigger" id="donate-trigger" type="button">Donar</button><button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Cambiar a modo oscuro"><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.6 8.6 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><span>Modo oscuro</span></button></div>
+  </header>
+
+  <dialog class="donation-dialog" id="donation-dialog" aria-labelledby="donation-title">
+    <div class="donation-dialog-inner">
+      <h2 class="visually-hidden" id="donation-title">Video de donativos para ReKapture</h2>
+      <button class="donation-close" id="donation-close" type="button" aria-label="Cerrar video">&times; <span>Cerrar</span></button>
+      <video id="donation-video" controls playsinline preload="none" aria-label="Video de donativos para ReKapture">
+        <source src="./assets/Donar.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+      </video>
+      <div class="donation-status" id="donation-status" role="status" aria-live="polite"><span class="donation-spinner" aria-hidden="true"></span><span id="donation-status-text">Cargando video...</span></div>
+    </div>
+  </dialog>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <!-- <div class="eyebrow"><span class="eyebrow-line"></span> CAPTURÁ. JUGÁ. REVIVÍ.</div> -->
+        <h1>Tus mejores partidas.<br><span>Bien capturadas.</span></h1>
+        <p class="intro">Grabá gameplay, guardá clips y volvé a esos momentos que merecen repetición. Todo desde una interfaz simple, con la potencia del motor de OBS.</p>
+        <div class="hero-actions"><div class="download-menu"><button class="button button-primary download-trigger" id="download-trigger" type="button" aria-expanded="false" aria-controls="download-options">Descargar ReKapture <span aria-hidden="true">&#8595;</span></button><div class="download-options" id="download-options" hidden><a class="download-option" href="https://github.com/Knze23/ReKapture/releases/download/v0.6.1/ReKapture-Setup-0.6.1.exe" download><span>Instalador Windows</span><small>.exe</small></a><a class="download-option" href="https://github.com/Knze23/ReKapture/releases/download/v0.6.1/ReKapture-0.6.1-portable.zip" download><span>Version portable</span><small>.zip</small></a></div></div><a class="button button-quiet github-button" href="https://github.com/Knze23/ReKapture" aria-label="Directo a mi github">GitHub</a><a class="hero-text-link" href="#funciones">Explorar funciones <span aria-hidden="true">&#8595;</span></a></div>
+        <p class="free-note"><strong>Gratis.</strong> Sin vueltas. Hecho para jugadores y creadores.</p>
+      </div>
+      <figure class="product-window reveal"><img src="assets/Principal.png" alt="Pantalla principal real de ReKapture: previsualización de juego, controles de audio, webcam y botón de grabación"><figcaption>Interfaz de grabación de ReKapture</figcaption></figure>
+      <div class="hero-note"><span class="note-line"></span> UNA FORMA MÁS SIMPLE DE GUARDAR TUS PARTIDAS</div>
+    </section>
+
+    <section class="features section-wrap reveal" id="funciones"><div class="section-label">HECHA PARA JUGAR</div><div class="section-heading"><h2>Todo lo que necesitás.<br><span>Sin complicarte.</span></h2><p>Una grabadora gratuita basada en el motor de OBS, pensada para que configurar y guardar tus partidas sea más directo.</p></div>
+      <div class="feature-grid"><article class="feature-card reveal"><div class="card-icon">◉</div><h3>Grabación de gameplay</h3><p>Capturá tu monitor, una ventana o el juego y concentráte en la partida.</p></article><article class="feature-card reveal"><div class="card-icon">↻</div><h3>Clips y repetición</h3><p>Guardá los últimos segundos de juego con clips y repetición instantánea.</p></article><article class="feature-card reveal"><div class="card-icon">♫</div><h3>Audio por separado</h3><p>Organizá el audio del escritorio y el micrófono en pistas independientes.</p></article><article class="feature-card reveal"><div class="card-icon">▣</div><h3>Biblioteca integrada</h3><p>Encontrá tus grabaciones, revisá sus detalles y abrí los archivos fácilmente.</p></article><article class="feature-card reveal"><div class="card-icon">◎</div><h3>Webcam independiente</h3><p>Grabá la cámara en un archivo aparte para editarla con libertad.</p></article><article class="feature-card reveal"><div class="card-icon">⚙</div><h3>Ajustes a tu medida</h3><p>Elegí resolución, FPS, codificador y calidad de grabación.</p></article></div>
+    </section>
+
+    <section class="showcase section-wrap reveal" id="capturas"><div class="section-label">UNA MIRADA A REKAPTURE</div><div class="showcase-grid"><div class="showcase-copy"><div class="showcase-tag"><span></span> TU CONTENIDO, EN ORDEN</div><h2>Encontrá tus partidas.<br><span>Volvé a cada momento.</span></h2><p>La biblioteca reúne tus videos y clips. Revisá la información de cada captura, reproducila o abrí su carpeta desde un solo lugar.</p></div><figure class="screenshot-card library-shot reveal"><img src="assets/Biblioteca.jpg" alt="Biblioteca real de ReKapture con un video seleccionado y sus detalles"><figcaption>Biblioteca de grabaciones</figcaption></figure></div></section>
+
+    <section class="settings-showcase section-wrap reveal"><div class="section-label">AJUSTES PARA TU FORMA DE JUGAR</div><div class="settings-gallery"><figure class="screenshot-card reveal"><img src="assets/Configuracion.png" alt="Ajustes de video de ReKapture: resolución, FPS, codificador y calidad"><figcaption>Resolución, FPS y calidad</figcaption></figure><figure class="screenshot-card reveal"><img src="assets/Config%20audio.png" alt="Opciones de audio y webcam de ReKapture"><figcaption>Audio, micrófono y webcam</figcaption></figure><figure class="screenshot-card reveal"><img src="assets/Repeticion.png" alt="Ajustes de clips y repetición instantánea"><figcaption>Clips y repetición instantánea</figcaption></figure></div></section>
+
+    <section class="skins-showcase section-wrap reveal" aria-labelledby="skins-title">
+      <div class="section-label">PERSONALIZACI&#211;N</div>
+      <div class="skins-heading"><h2 id="skins-title">Una interfaz a tu estilo.</h2><p>Un vistazo a algunas de las apariencias disponibles. Se seguir&#225;n sumando nuevas opciones.</p></div>
+      <div class="skins-grid">
+        <figure class="screenshot-card"><img src="assets/Skins.png" alt="Una de las apariencias disponibles de ReKapture"></figure>
+        <figure class="screenshot-card"><img src="assets/Skin2.png" alt="Otra apariencia disponible de ReKapture"></figure>
+        <figure class="screenshot-card"><img src="assets/Skin3.png" alt="Otra apariencia de la interfaz de ReKapture"></figure>
+        <figure class="screenshot-card"><img src="assets/Skin4.png" alt="Una apariencia adicional de ReKapture"></figure>
+      </div>
+    </section>
+    <section class="updates section-wrap" id="novedades"><div class="section-label">NOVEDADES</div><div class="updates-panel"><div><div class="updates-tag"><span></span> VERSION 0.6.1 DISPONIBLE</div><h2>ReKapture <span>0.6.1</span><br>ya est&#225; disponible.</h2><p>Descarg&#225; la versi&#243;n que prefieras y empez&#225; a grabar tus partidas con ReKapture.</p><div class="release-actions"><a class="button button-primary" href="https://github.com/Knze23/ReKapture/releases/download/v0.6.1/ReKapture-Setup-0.6.1.exe" download>Descargar instalador .exe</a><a class="button button-quiet" href="https://github.com/Knze23/ReKapture/releases/download/v0.6.1/ReKapture-0.6.1-portable.zip" download>Descargar versi&#243;n portable</a></div></div><div class="updates-mark"><img src="assets/rekapture-logo.png" alt=""></div></div></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#inicio"><img src="assets/rekapture-logo.png" alt=""><span>Re<span class="brand-accent">Kapture</span></span></a><p>Una grabadora gratuita en desarrollo, basada en el motor de OBS.</p><span class="copyright">© <span id="year">2026</span> ReKapture</span></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const themeToggle = document.getElementById('theme-toggle');
+    let savedTheme = null;
+    try { savedTheme = localStorage.getItem('rekapture-theme'); } catch (_) {}
+    if (savedTheme === 'dark') document.documentElement.dataset.theme = 'dark';
+    const updateThemeToggle = () => {
+      const isDark = document.documentElement.dataset.theme === 'dark';
+      themeToggle.setAttribute('aria-pressed', String(isDark));
+      themeToggle.setAttribute('aria-label', isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
+      themeToggle.querySelector('span').textContent = isDark ? 'Modo claro' : 'Modo oscuro';
+    };
+    updateThemeToggle();
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.dataset.theme !== 'dark';
+      document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+      try { localStorage.setItem('rekapture-theme', isDark ? 'dark' : 'light'); } catch (_) {}
+      updateThemeToggle();
+    });
+    document.documentElement.classList.add('js');
+    const revealItems = document.querySelectorAll('.reveal');
+    document.querySelectorAll('[data-placeholder-link]').forEach(link => link.addEventListener('click', event => event.preventDefault()));
+    const downloadTrigger = document.getElementById('download-trigger');
+    const downloadOptions = document.getElementById('download-options');
+    const donateTrigger = document.getElementById('donate-trigger');
+    const donationDialog = document.getElementById('donation-dialog');
+    const donationClose = document.getElementById('donation-close');
+    const donationVideo = document.getElementById('donation-video');
+    const donationStatus = document.getElementById('donation-status');
+    const donationStatusText = document.getElementById('donation-status-text');
+    const closeDownloadMenu = () => {
+      downloadOptions.hidden = true;
+      downloadTrigger.setAttribute('aria-expanded', 'false');
+    };
+    downloadTrigger.addEventListener('click', () => {
+      const isOpen = downloadTrigger.getAttribute('aria-expanded') === 'true';
+      downloadTrigger.setAttribute('aria-expanded', String(!isOpen));
+      downloadOptions.hidden = isOpen;
+    });
+    donateTrigger.addEventListener('click', () => {
+      closeDownloadMenu();
+      donationDialog.showModal();
+      donationStatus.hidden = false;
+      donationStatus.classList.remove('has-error');
+      donationStatusText.textContent = 'Cargando video...';
+      donationVideo.load();
+      const playback = donationVideo.play();
+      if (playback) playback.catch(() => {
+        donationStatus.classList.add('has-error');
+        donationStatusText.textContent = 'Presiona reproducir para iniciar el video.';
+      });
+    });
+    donationVideo.addEventListener('playing', () => { donationStatus.hidden = true; });
+    donationVideo.addEventListener('waiting', () => { donationStatus.hidden = false; });
+    donationVideo.addEventListener('error', () => {
+      donationStatus.hidden = false;
+      donationStatus.classList.add('has-error');
+      donationStatusText.textContent = 'No se pudo cargar el video.';
+    });
+    donationClose.addEventListener('click', () => donationDialog.close());
+    donationDialog.addEventListener('close', () => {
+      donationVideo.pause();
+      donationVideo.currentTime = 0;
+      donationStatus.hidden = true;
+    });
+    donationDialog.addEventListener('click', event => {
+      if (event.target === donationDialog) donationDialog.close();
+    });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.download-menu')) closeDownloadMenu();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !donationDialog.open) {
+        closeDownloadMenu();
+        downloadTrigger.focus();
+      }
+    });
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.14, rootMargin: '0px 0px -35px 0px' });
+      revealItems.forEach(item => revealObserver.observe(item));
+    } else {
+      revealItems.forEach(item => item.classList.add('is-visible'));
+    }
+  </script>
+</body>
+</html>
